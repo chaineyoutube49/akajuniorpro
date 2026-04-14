@@ -3,7 +3,7 @@ services:
   - type: web
     name: akajuniorpro
     env: static
-    buildCommand: npm run build
+    buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
       - type: rewrite
